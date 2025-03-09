@@ -1,3 +1,8 @@
+import {MONGODB_CONNECT_URI} from './config.js'
+
+const conexion = 'mongodb://' + 'DB_HOST+':'+DB_PORT+'/'+DB_DATABASE
+mongoose.connect(MONGODB_CONNECT_URI).then()
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -5,6 +10,8 @@ const path = require('path');
 const clienteRoutes = require('./routes/cliente');
 const userRoutes = require('./routes/user');
 const { sendEmail } = require('./mailgun'); // Importando a função de envio de email
+
+
 
 const app = express();
 app.use(bodyParser.json());
