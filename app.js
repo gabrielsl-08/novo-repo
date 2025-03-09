@@ -10,10 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));  // Servindo arquivos estáticos da pasta public
 
-mongoose.connect('mongodb://localhost:27017/meuServico', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+
 
 // Usando as rotas
 app.use('/cliente', clienteRoutes);
