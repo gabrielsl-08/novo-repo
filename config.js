@@ -3,3 +3,4 @@ module.exports = {
   resendApiKey: 're_CFQ8Ebvq_6Qo7AVRyWQEVd52PauxRFAZy', // Sua chave da API do Resend
   emailUser: 'marcelo.morgado1974.mm@gmail.com'
 };
+export const MONGODB_CONNECT_URI = process.env.URL;
